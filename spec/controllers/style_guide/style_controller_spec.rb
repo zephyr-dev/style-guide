@@ -17,6 +17,11 @@ describe StyleGuide::StyleController do
       assigns(:sections).first.should be_a StyleGuide::Section
     end
 
+    it "assigns config" do
+      get :index, use_route: :styles
+      assigns(:config).should be_a StyleGuide::Config
+    end
+
     it "sets the current section to the first one" do
       get :index, use_route: :styles
       assigns(:current_section).should == assigns(:sections).first
@@ -37,5 +42,11 @@ describe StyleGuide::StyleController do
       assigns(:current_section).should be_a StyleGuide::Section
       assigns(:current_section).title.should == "Monkey Hammer"
     end
+
+    it "assigns config" do
+      get :show, id: "monkey_hammer", use_route: :styles
+      assigns(:config).should be_a StyleGuide::Config
+    end
+
   end
 end
