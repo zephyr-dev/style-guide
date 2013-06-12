@@ -7,9 +7,8 @@ pairs:
   ra: Rasheed Abdul-Aziz; squeedee
   ba: Alex Babkin; ababkin
   dc: Dan Connor; dconnor
+  tm: Todd Mohney; todd
 
 email:
   prefix: pair
   domain: pivotallabs.com
-
-global: true
