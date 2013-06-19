@@ -12,6 +12,9 @@
     <%- @config.css_urls.each do |url| %>
       <%= stylesheet_link_tag url, :media => "all" %>
     <%- end %>
+    <%- @config.js_urls.each do |url| %>
+      <%= javascript_include_tag url %>
+    <%- end %>
     <%= stylesheet_link_tag    "style_guide/application", :media => "all" %>
     <%= csrf_meta_tags %>
   </head>
@@ -37,7 +40,6 @@
       <div>
     <div>
 
-    <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "style_guide/application" %>
   </body>
 </html>
