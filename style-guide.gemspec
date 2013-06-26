@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "rails", "~> 3.2"
-  s.add_dependency "nokogiri", "~> 1.5"
+  s.add_dependency "nokogiri", "~> 1.6"
   s.add_dependency "github-markdown", "~> 0.5"
 
   # super-relevant in development, but super-irrelevant in staging
