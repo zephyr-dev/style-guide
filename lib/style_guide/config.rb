@@ -1,9 +1,7 @@
 module StyleGuide
   class Config
-    APPLICATION_CSS = 'style_guide'
-    APPLICATION_JS = 'style_guide'
-    DEFAULT_CSS_PATHS = [APPLICATION_CSS]
-    DEFAULT_JS_PATHS = [APPLICATION_JS]
+    DEFAULT_CSS_PATHS = []
+    DEFAULT_JS_PATHS = []
 
     attr_reader :paths
     attr_accessor :css_urls, :js_urls
