@@ -25,7 +25,7 @@
         <a class="brand" href="/">Style Guide</a>
         <input id="style-guide-checkbox" type="checkbox" />
         <div class="style-guide-bar-sections">
-        <% @sections.each_with_index do |section, index| %>
+        <% @sections.sort_by(&:title).each_with_index do |section, index| %>
           <div class="style-guide-bar-section <%= (section == @current_section) ? 'active'.html_safe : '' %>">
             <a href="<%= style_path(section.id) %>"><%= section.title %></a>
           </div>
