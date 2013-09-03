@@ -2,8 +2,8 @@ require "spec_helper"
 
 describe StyleGuide::Config do
   describe "#css_urls" do
-    context "when no css_url has been added" do
-      it { should have_at_least(1).css_url }
+    context "by default" do
+      its(:css_urls) { should == StyleGuide::Config::DEFAULT_CSS_PATHS }
     end
 
     context "when adding a css_url" do
