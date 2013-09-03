@@ -2,10 +2,6 @@ require "spec_helper"
 
 describe StyleGuide::Config do
   describe "#css_urls" do
-    context "when no css_url has been added" do
-      it { should have_at_least(1).css_url }
-    end
-
     context "when adding a css_url" do
       it "modifies the css paths" do
         expect do
@@ -28,7 +24,7 @@ describe StyleGuide::Config do
       its(:css_urls) { should include "partials-and-magic-beans" }
     end
   end
-  
+
   describe "#paths" do
     context "when no paths have been added" do
       it { should have_at_least(1).path }
