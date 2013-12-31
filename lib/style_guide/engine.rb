@@ -1,4 +1,5 @@
 require "rails/engine"
+require "font-awesome-rails"
 require "style_guide/config"
 require "style_guide/section"
 
