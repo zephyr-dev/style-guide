@@ -49,7 +49,8 @@ module StyleGuide
     private
 
     def action_view
-      base_view = ActionView::Base.new(Rails.root.join("app", "views"))
+      controller = StyleGuide::StyleController.new
+      base_view = ActionView::Base.new(Rails.root.join("app", "views"), {}, controller)
       base_view.extend StyleGuide::ApplicationHelper
       base_view
     end

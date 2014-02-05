@@ -4,6 +4,7 @@ PATH
     style-guide (1.0.0)
       font-awesome-rails
       github-markdown (~> 0.5)
+      informal
       nokogiri (~> 1.6)
       rails (~> 3.2)
 
@@ -47,11 +48,11 @@ GEM
       eventmachine (>= 0.12.9)
     erubis (2.7.0)
     eventmachine (1.0.0)
-    font-awesome-rails (4.0.3.0)
+    font-awesome-rails (4.0.3.1)
       railties (>= 3.2, < 5.0)
     foreman (0.60.2)
       thor (>= 0.13.6)
-    github-markdown (0.6.3)
+    github-markdown (0.6.4)
     guard (1.6.1)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
@@ -69,6 +70,8 @@ GEM
       rspec (~> 2.11)
     hike (1.2.1)
     i18n (0.6.1)
+    informal (0.1.0)
+      activemodel (~> 3.0)
     journey (1.0.4)
     json (1.7.6)
     listen (0.7.2)
@@ -154,6 +157,7 @@ DEPENDENCIES
   guard-bundler
   guard-livereload
   guard-rspec
+  informal
   rack-livereload
   rb-fsevent
   rspec-rails

@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "nokogiri", "~> 1.6"
   s.add_dependency "github-markdown", "~> 0.5"
   s.add_dependency "font-awesome-rails"
+  s.add_dependency "informal"
 
   # super-relevant in development, but super-irrelevant in staging
   s.add_development_dependency "rack-livereload"
@@ -30,4 +31,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "guard-bundler"
   s.add_development_dependency "terminal-notifier-guard"
+  s.add_development_dependency "informal"
 end
